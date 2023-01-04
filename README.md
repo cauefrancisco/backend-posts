@@ -1,6 +1,4 @@
- # Node.JS API Using MySQL with Docker
-
-
+# Node.JS API Using MySQL with Docker
 
 ### This is the backend for a front-end Blog project.
 
@@ -8,7 +6,4 @@
 
 ##### The API is used for creating, editing, updating and deleting blog posts.
 
-*Still in development*
-
-
-
+**finished**
