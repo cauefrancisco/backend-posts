@@ -1,10 +1,11 @@
 import express from "express";
-import getAll from "./controllers/posts.controller.js";
+import methods from "./controllers/posts.controller.js";
 
 const router = express.Router();
 
 //.get('/', ()=>{})\
 
-router.get('/posts', getAll);
+router.get('/posts', methods.getAll);
+router.post('/posts', methods.createArticle);
 
 export default router;
