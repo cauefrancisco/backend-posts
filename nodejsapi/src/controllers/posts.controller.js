@@ -15,6 +15,27 @@ const createArticle = async (req, res) => {
 
 };
 
-const methods = {getAll, createArticle};
+const deleteArticle = async  (req, res) => {
+
+  const { id } = req.params;
+  
+  await models.deleteArticleModel(id);
+
+  return res.status(204).json();
+
+}
+
+const updateArticle = async (req, res) => {
+
+  const { id } = req.params;
+
+  await models.updateArticleModel(id, req.body);
+
+  return res.status(204).json();
+
+
+}
+
+const methods = {getAll, createArticle, deleteArticle, updateArticle};
 
 export default methods;
